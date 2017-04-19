@@ -8,8 +8,8 @@ cache:
 env:
   global:
    - CF_API=https://api.eu-gb.bluemix.net/
-   - CF_USERNAME=[your email]
-   - CF_ORG=[your email]
+   - CF_USERNAME=frankwalsh59@gmail.com
+   - CF_ORG=frankwalsh59
    - CF_SPACE=dev
 before_deploy:
       - wget https://s3.amazonaws.com/go-cli/releases/v6.12.4/cf-cli_amd64.deb -qO temp.deb && sudo dpkg -i temp.deb

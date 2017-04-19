@@ -20,7 +20,13 @@ before_deploy:
 deploy:
       - edge: true
         provider: script
-        script: cf zero-downtime-push [app name] -f ./manifest.yml;
+        script: cf zero-downtime-push frankx-hacker-staging -f ./manifest-staging.yml;
         skip_cleanup: true
         on:
           branch: master
+      - edge: true
+        provider: script
+        script: cf zero-downtime-push frankx-hacker -f ./manifest.yml;
+        skip_cleanup: true
+        on:
+          tags: true

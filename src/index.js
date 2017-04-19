@@ -12,7 +12,7 @@ import React from 'react';
                <div className="row">
                   <div className="col-md-6 col-md-offset-3">
                      <div className="page-header">
-                        <h1>Hacker News</h1>
+                        <h1>FX Hacker News</h1>
                            {this.props.children}
                      </div>
                    </div>

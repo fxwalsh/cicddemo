@@ -24,7 +24,7 @@
   "proxy": "http://localhost:8081",
   "scripts": {
     "startserver": "babel-node server.js",
-    "start": "concurrently \"PORT=8080 react-scripts start\" \"PORT=8081 babel-watch server.js\"",
+    "start": "concurrently \"react-scripts start\" \"babel-watch server.js\"",
     "build": "react-scripts build"
   },
   "babel": {
